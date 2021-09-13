@@ -1,0 +1,29 @@
+version: '3.4'  # docker-compose version
+
+#first aid: 
+# https://docs.docker.com/compose/compose-file/
+# https://yaml-multiline.info/
+
+services:
+
+#  adminer:    image: adminer
+#    restart: always
+#    ports:
+#      - 8080:8080
+      
+      
+  mysql:
+    networks:
+      - directusNW
+    image: mysql:5.7
+    container_name: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: michel
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+
+
+networks:
+  directusNW:
+
