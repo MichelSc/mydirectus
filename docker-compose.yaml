@@ -15,6 +15,8 @@ services:
   mysql:
     networks:
       - directusNW
+    ports:
+      - 3306:3306
     image: mysql:5.7
     container_name: mysql
     command: --default-authentication-plugin=mysql_native_password
