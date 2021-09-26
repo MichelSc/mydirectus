@@ -1,0 +1,1 @@
+import{openBlock as e,createElementBlock as r,toDisplayString as i}from"vue";var s={props:{value:String}};s.render=function(s,t,u,a,n,o){return e(),r("div",null,"Value: "+i(u.value),1)},s.__file="src/display.vue";var t={id:"custom",name:"Custom",description:"This is my custom display!",icon:"box",handler:s,types:["string"]};export{t as default};

@@ -1,2 +1,2 @@
-cd /home/michel/git/misc.test.directus/misc.test.proj
+cd /home/michel/git/mydirectus/misc.test.proj
 npx directus start
