@@ -1,7 +1,7 @@
 <template>
   <div class="todo">
     <h3>Todo component</h3>
-    <li>Todo: {{ todo }}</li>
+    <li>Todo: {{nb}}*{{ todo }}</li>
   </div>
 </template>
 
@@ -9,7 +9,8 @@
 export default {
   name: 'ToDo',
   props: {
-    todo: String
+    todo: String,
+    nb: Number
   }
 }
 </script>
