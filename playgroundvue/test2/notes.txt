@@ -4,3 +4,6 @@
       v-bind:todo="todo.text"
       v-bind:nb="item.nb"
   ></ToDo>
+
+      <ToDo todo="A faire pour michel" :nb=count*3 />
+
