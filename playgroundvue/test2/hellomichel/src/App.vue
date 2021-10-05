@@ -1,11 +1,8 @@
 <template>
   <div class="myApp">
-    <ToDo todo="A faire pour michel1" :nb="total" />
-    <ToDo todo="A faire pour michel2" :nb="todos.length" />
-    The todos are {{JSON.stringify(total)}}
-    
-    The total is {{total2}}
     <HelloWorld msg="Welcome to Truc Vue.js App"/>
+    <h3>Todos component  ({{todos.length+1}})</h3>
+    <ul>
     <ToDo
         v-for="t in todos"
         v-bind:key ="t.tk" 
@@ -13,6 +10,8 @@
         v-bind:nb="t.nb"
     >
     </ToDo>
+    <ToDo todo="A faire extra" :nb="todos.length+1" />
+    </ul>
   </div>
 </template>
 
