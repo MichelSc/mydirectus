@@ -12,12 +12,15 @@
     </ToDo>
     <ToDo todo="A faire extra" :nb="todos.length+1" />
     </ul>
+    <h3>First Chart</h3>
+    <RandomChart/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import ToDo from './components/ToDo.vue'
+import RandomChart from './components/RandomChart.vue'
 
 var mydata = { 
   todos: [
@@ -34,7 +37,8 @@ export default {
   name: 'App',
   components: {
     HelloWorld,
-    ToDo
+    ToDo,
+    RandomChart
   },
   data() {
     return mydata;
