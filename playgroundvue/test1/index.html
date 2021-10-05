@@ -1,0 +1,25 @@
+<!-- this is our View -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="example-1">
+
+<h1>My tests vues</h1>
+
+<h2>My name</h2>
+  Hello {{ name }}!
+
+<h2>My Todo</h2>
+
+<todo-item todo="mytodoonly"></todo-item>
+
+<h2>My Todos</h2>
+
+<todo-item
+      v-for="todo in todos"
+      v-bind:todo="todo"
+    >
+</todo-item>
+
+</div>
+
+<script src="index.js"></script>
