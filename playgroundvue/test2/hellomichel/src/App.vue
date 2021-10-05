@@ -1,6 +1,6 @@
 <template>
   <div class="myApp">
-    <HelloWorld msg="Welcome to Truc Vue.js App"/>
+    <HelloWorld msg="Welcome to Truc Vue.js Michel"/>
     <h3>Todos component  ({{todos.length+1}})</h3>
     <ul>
     <ToDo

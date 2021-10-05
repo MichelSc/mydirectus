@@ -1,9 +1,0 @@
-  data :{ todos: [{text:"tache1", nb:2580}]}
-  <ToDo
-      v-for="todo in todos"
-      v-bind:todo="todo.text"
-      v-bind:nb="item.nb"
-  ></ToDo>
-
-      <ToDo todo="A faire pour michel" :nb=count*3 />
-
