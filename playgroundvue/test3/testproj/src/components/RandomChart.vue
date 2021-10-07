@@ -9,7 +9,6 @@
   import LineChart from './LineChart.js'
 
   export default {
-    name: 'RandomChart',
     components: {
       LineChart
     },

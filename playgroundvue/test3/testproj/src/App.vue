@@ -1,6 +1,6 @@
 <template>
   <div class="myApp">
-    <HelloWorld msg="Welcome to Truc Vue.js Michel"/>
+    <HelloWorld msg="Welcome to Truc Vue.js Michel2"/>
     <h3>Todos component  ({{todos.length+1}})</h3>
     <ul>
     <ToDo
@@ -13,14 +13,14 @@
     <ToDo todo="A faire extra" :nb="todos.length+1" />
     </ul>
     <h3>First Chart</h3>
-    <RandomChart/>
+    <RandomChart2/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import ToDo from './components/ToDo.vue'
-import RandomChart from './components/RandomChart.vue'
+import RandomChart2 from './components/RandomChart.vue'
 
 var mydata = { 
   todos: [
@@ -35,10 +35,10 @@ var mydata = {
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld,
-    ToDo,
-    RandomChart
+  components: {   
+      HelloWorld
+    , ToDo
+    , RandomChart2
   },
   data() {
     return mydata;
