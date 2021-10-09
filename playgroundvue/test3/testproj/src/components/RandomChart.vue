@@ -15,6 +15,7 @@ export default {
   data() {
     return {
       datacollection: null,
+      myarray: [1,2,3,4,5]
     };
   },
   mounted() {
@@ -33,12 +34,12 @@ export default {
             backgroundColor: "#f87979",
             stepped: true,
             tension: 0,
-            data: [1, 2, 40, 4, 5],
+            data: [-1, -2, -4, 4, 5],
           },
           {
             label: "Data Two",
             backgroundColor: "#787979",
-            data: [10, 20, 0, 0, 12],
+            data: this.myarray,
           },
         ],
       };
@@ -52,18 +53,21 @@ export default {
         this.counter++;
         console.log(`onButtonClicked ${this.counter}`)
         // this.datacollection.datasets[0].data[2]=this.counter; 
-        this.$set(this.datacollection.datasets[0].data, 2, this.counter);
+        this.$set(this.myarray, 2, this.counter);
         let datasets = this.datacollection.datasets;
         console.log(`onButtonClicked datasets ${datasets.length}`);
-        for ( let dataset of datasets){
-            console.log(`onButtonClicked ..datasets ${dataset.label}`);
-            for ( let cell of dataset.data){
-                console.log(`onButtonClicked ....value ${cell}`);
-            }
-        }
-        this.$data.update()
-    },
-  },
+        // for ( let dataset of datasets){
+        //     console.log(`onButtonClicked ..datasets ${dataset.label}`);
+        //     for ( let cell of dataset.data){
+        //         console.log(`onButtonClicked ....value ${cell}`);
+        //     }
+        // }
+        // for ( let attr in this){
+        //     console.log(`..attr ${attr} ${typeof this[attr]}`);
+        // }
+        // this.$forceUpdate();
+    }
+  }
 };
 </script>
 
