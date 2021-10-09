@@ -23,16 +23,18 @@
     methods: {
       fillData () {
         this.datacollection = {
-          labels: [this.getRandomInt(), this.getRandomInt()],
+          labels: ['un','deux', 'trois', 'quatre', 'cinq'],
           datasets: [
             {
               label: 'Data One',
               backgroundColor: '#f87979',
-              data: [this.getRandomInt(), this.getRandomInt()]
+              stepped: true,
+              tension: 0,
+              data: [1,2,40,4,5]
             }, {
-              label: 'Data One',
-              backgroundColor: '#f87979',
-              data: [this.getRandomInt(), this.getRandomInt()]
+              label: 'Data Two',
+              backgroundColor: '#787979',
+              data: [10,20,0,0,0]
             }
           ]
         }
