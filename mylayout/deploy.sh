@@ -1,0 +1,1 @@
+cp dist/index.js ../misc.test.proj/extensions/layouts/mylayout

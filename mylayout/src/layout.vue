@@ -2,6 +2,7 @@
 	<div>
 		<p>Name: {{ name }}</p>
 		<p>Collection: {{ collection }}</p>
+		<p>Collection typeof: {{ typeof collection }}</p>
 	</div>
 </template>
 
@@ -16,7 +17,7 @@ export default {
 		name: {
 			type: String,
 			required: true,
-		},
+        }
 	},
 };
 </script> 

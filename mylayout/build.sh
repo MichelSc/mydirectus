@@ -1,0 +1,1 @@
+npx directus-extension build
