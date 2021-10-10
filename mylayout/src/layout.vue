@@ -1,15 +1,16 @@
 <template>
 	<div>
-		<p>Name: {{ name }}</p>
-		<p>Collection: {{ collection }}</p>
-		<p>Collection typeof: {{ typeof collection }}</p>
+		<p>Name2: {{ name }}</p>
+		<p>Collection2: {{ collection }}</p>
+		<p>Collection2 typeof: {{ typeof collection }}</p>
 	</div>
 </template>
 
 <script>
 export default {
 	inheritAttrs: false,
-	props: {
+    props: [ "collection", "name" ]
+    /*{
 		collection: {
 			type: String,
 			required: true,
@@ -18,6 +19,6 @@ export default {
 			type: String,
 			required: true,
         }
-	},
+	}*/,
 };
 </script> 
