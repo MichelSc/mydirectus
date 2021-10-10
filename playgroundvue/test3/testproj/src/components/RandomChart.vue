@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       datacollection: null,
-      myarray: [1,2,3,4,5]
+      myarray: [1,2,3,3,3]
     };
   },
   mounted() {
@@ -29,13 +29,6 @@ export default {
     this.datacollection = {
         labels: ["un", "deux", "trois", "quatre", "cinq"],
         datasets: [
-          {
-            label: "Data One",
-            backgroundColor: "#f87979",
-            stepped: true,
-            tension: 0,
-            data: [-1, -2, -4, 4, 5],
-          },
           {
             label: "Data Two",
             backgroundColor: "#787979",
